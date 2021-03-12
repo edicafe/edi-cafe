@@ -154,6 +154,13 @@
   padding-bottom: 20px;
 
 }
+#Gallery .container
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 20px;
+  padding-bottom:20px;
+  text-align: center;
+}
 #map
 {
   height: 400px;
@@ -216,4 +223,39 @@ flex-direction: column;
   color:#fff;
   cursor: pointer;
   text-transform: uppercase;
+}
+/*Gallery*/
+#Gallery
+{
+  box-sizing: border-box;
+}
+.row
+{
+  margin:8px -16px;
+}
+.row,
+.row > .column {
+  padding :8px;
+}
+.column{
+  float:left;
+  width:25%;
+}
+
+.row::after
+{
+  content:"";
+  display:table;
+  clear:both;
+}
+.content
+{
+  background-color: white;
+  padding:10px;
+}
+@media screen and (max-width:900px)
+{
+  .column{
+    width:50%;
+     }
 }
